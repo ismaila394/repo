@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accueil - Chez Didi Traiteur</title>
+    <link rel="stylesheet" href="header-styles.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-soft sticky-top">
+        <div class="container">
+            <div class="navbar-brand-container">
+                <img src="/images/conception-logo-ac-design-plat_23-2149482027.avif" alt="Logo" class="navbar-logo">
+                <span class="brand-text">Chez Didi Traiteur</span>
+            </div>
+            <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="toggler-line"></span>
+                <span class="toggler-line"></span>
+                <span class="toggler-line"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html"><i class="fas fa-home nav-icon"></i>Accueil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="menu.html"><i class="fas fa-utensils nav-icon"></i>Notre Menu</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fas fa-info-circle nav-icon"></i>À propos
+                        </a>
+                        <ul class="dropdown-menu custom-dropdown">
+                            <li><a class="dropdown-item" href="A propos.html"><i class="fas fa-users me-2"></i>Qui sommes-nous ?</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Galerie.html"><i class="fas fa-images nav-icon"></i>Galerie</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Contact.html"><i class="fas fa-envelope nav-icon"></i>Contact</a>
+                    </li>
+                </ul>
+                <form class="search-form d-flex" role="search">
+                    <div class="search-container">
+                        <input class="form-control search-input" type="search" placeholder="Rechercher..." aria-label="Search"/>
+                        <button class="btn search-btn" type="submit">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <section>
+        <!-- Hero Banner -->
+        <div class="banner position-relative">
+            <img src="/images/vue-dessus-nouilles-aux-legumes-frits-salade-tomates-autres-plats-table_141793-13159.avif" alt="Banner Image" class="w-100" style="max-height:420px;object-fit:cover;">
+            <div class="banner-text position-absolute top-50 start-50 translate-middle text-center text-white" style="background:rgba(5,150,105,0.7);padding:2rem 2.5rem;border-radius:20px;">
+                <h1 class="display-5 fw-bold mb-3">Bienvenue sur notre site de livraison de repas</h1>
+                <p class="lead mb-4">Nous vous proposons une large gamme de plats savoureux, préparés avec des ingrédients frais et de qualité.</p>
+                <a href="menu.html" class="btn btn-lg btn-warning px-4 shadow">Commander maintenant</a>
+            </div>
+        </div>
+        
+        <!-- Présentation -->
+        <div class="container my-5">
+            <div class="row align-items-center g-4">
+                <div class="col-md-6">
+                    <img src="images/interieur-du-restaurant_1127-3392.avif" alt="Restaurant Image" class="img-fluid rounded shadow">
+                </div>
+                <div class="col-md-6">
+                    <h2 class="mb-3 text-success">Bienvenue chez <mark class="bg-warning text-dark px-2 rounded">DIDI TRAITEUR</mark></h2>
+                    <p class="mb-4">Nous sommes ravis de vous accueillir sur notre site de livraison de repas. Notre mission est de vous offrir une expérience culinaire exceptionnelle, en vous proposant des plats savoureux et variés, préparés avec soin par nos chefs talentueux.</p>
+                    <h4 class="mb-2 text-primary">Axé sur la Qualité et la Tradition</h4>
+                    <p>Chez DIDI TRAITEUR, nous célébrons la richesse de notre terroir. Découvrez des recettes traditionnelles, élaborées avec les produits les plus frais de notre belle région de Dakar. Goûtez l'excellence, ressentez la passion et l'hospitalité légendaire de la Teranga. Notre équipe vous accueille dans une ambiance chaleureuse et conviviale, où les rires et les échanges se mêlent aux parfums enivrants de nos plats.</p>
+                    <a href="A propos.html" class="btn btn-outline-success mt-3">EN SAVOIR PLUS</a>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Carousel -->
+        <div class="container my-5">
+            <h4 class="mb-4 text-center text-success">Attraction et Décision</h4>
+            <div id="carouselExample" class="carousel slide shadow rounded" data-bs-ride="carousel">
+                <div class="carousel-inner rounded">
+                    <div class="carousel-item active">
+                        <img src="/images/assortiment-viande-rotie-du-riz-dans-plateau-metal-bois_219193-4503.avif" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="/images/foie-boeuf-roti-grille-salade-oignons-tomates_2829-10732.avif" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="/images/vue-avant-soupe-sauce-viande-legumes-verts-pommes-terre-bureau-sombre-soupe-viande_140725-79067.avif" class="d-block w-100" alt="...">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+        
+        <!-- Footer -->
+        <footer>
+            <div class="footer-container">
+                <div class="footer-section about-us-footer">
+                    <h3>CHEZ DIDI TRAITEUR</h3>
+                    <p>
+                        Votre escale culinaire à Dakar pour des saveurs sénégalaises authentiques. Venez découvrir la passion de notre terroir dans chaque plat.
+                    </p>
+                    <div class="social-icons">
+                        <a href="##" target="_blank" aria-label="Facebook"><img src="images/images.jpeg" alt="Facebook"></a>
+                        <a href="##" target="_blank" aria-label="Instagram"><img src="/images/téléchargement.png" alt="Instagram"></a>
+                    </div>
+                </div>
+                <div class="footer-section quick-links">
+                    <h3>Liens Rapides</h3>
+                    <ul>
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="menu.html">Notre Menu</a></li>
+                        <li><a href="A propos.html">Qui sommes-nous?</a></li>
+                        <li><a href="Galerie.html">Galerie</a></li>
+                        <li><a href="Contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section contact-info">
+                    <h3>Nous Contacter</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> 123, xxxxxx, Dakar, Sénégal</p>
+                    <p><i class="fas fa-phone"></i> +221 77-525-62-87</p>
+                    <p><i class="fas fa-envelope"></i> contact@DIDITRAITEUR.sn</p>
+                    <p><i class="fas fa-clock"></i> Lun - Sam : 12h-00H & 19h-23h</p>
+                    <p>Dimanche : Fermé</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Ismaila diakhate. Tous droits réservés.</p>
+            </div>
+        </footer>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

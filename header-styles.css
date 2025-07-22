@@ -1,0 +1,302 @@
+/* Header Soft Styles */
+
+.navbar-soft {
+    background: linear-gradient(135deg, #f8fffe 0%, #f0f9f7 100%);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+    padding: 0.8rem 0;
+}
+
+.navbar-soft.scrolled {
+    background: rgba(248, 255, 254, 0.95);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.12);
+}
+
+.navbar-brand-container {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    transition: transform 0.3s ease;
+}
+
+.navbar-brand-container:hover {
+    transform: translateY(-2px);
+}
+
+.navbar-logo {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 4px 15px rgba(34, 197, 94, 0.2);
+    transition: all 0.3s ease;
+}
+
+.navbar-logo:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 20px rgba(34, 197, 94, 0.3);
+}
+
+.brand-text {
+    font-size: 1.4rem;
+    font-weight: 700;
+    background: linear-gradient(135deg, #ef9724, #b95c10);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    letter-spacing: -0.5px;
+}
+
+/* Navigation Links */
+.navbar-nav .nav-link {
+    color: #374151 !important;
+    font-weight: 500;
+    padding: 0.8rem 1.2rem !important;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin: 0 4px;
+}
+
+.nav-icon {
+    font-size: 0.9rem;
+    opacity: 0.7;
+    transition: all 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #c46630 !important;
+    background: rgba(16, 185, 129, 0.1);
+    transform: translateY(-2px);
+}
+
+.navbar-nav .nav-link:hover .nav-icon {
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+.navbar-nav .nav-link.active {
+    color: #ffffff !important;
+    background: linear-gradient(135deg, #9b6629, #9b7611);
+    box-shadow: 0 4px 15px rgba(16, 185, 129, 0.3);
+}
+
+.navbar-nav .nav-link.active .nav-icon {
+    opacity: 1;
+}
+
+/* Custom Toggler */
+.custom-toggler {
+    border: none;
+    padding: 8px;
+    border-radius: 8px;
+    background: rgba(16, 185, 129, 0.1);
+    transition: all 0.3s ease;
+}
+
+.custom-toggler:focus {
+    box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.2);
+}
+
+.toggler-line {
+    display: block;
+    width: 22px;
+    height: 2px;
+    background: #d49022;
+    margin: 4px 0;
+    border-radius: 2px;
+    transition: all 0.3s ease;
+}
+
+.custom-toggler:hover .toggler-line {
+    background: #ec7d2e;
+}
+
+/* Dropdown */
+.custom-dropdown {
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+    padding: 0.5rem 0;
+    margin-top: 8px;
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+}
+
+.custom-dropdown .dropdown-item {
+    padding: 0.8rem 1.5rem;
+    color: #374151;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+}
+
+.custom-dropdown .dropdown-item:hover {
+    background: rgba(16, 185, 129, 0.1);
+    color: #e68a27;
+    transform: translateX(5px);
+}
+
+/* Search Form */
+.search-form {
+    margin-left: 1rem;
+}
+
+.search-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 25px;
+    padding: 4px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+}
+
+.search-container:focus-within {
+    box-shadow: 0 6px 25px rgba(16, 185, 129, 0.2);
+    transform: translateY(-2px);
+}
+
+.search-input {
+    border: none;
+    background: transparent;
+    padding: 0.6rem 1rem;
+    font-size: 0.9rem;
+    color: #374151;
+    width: 200px;
+    transition: all 0.3s ease;
+}
+
+.search-input:focus {
+    box-shadow: none;
+    outline: none;
+    width: 250px;
+}
+
+.search-input::placeholder {
+    color: #9ca3af;
+    font-weight: 400;
+}
+
+.search-btn {
+    background: linear-gradient(135deg, #cd7e34, #ec9b39);
+    border: none;
+    color: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(16, 185, 129, 0.3);
+}
+
+.search-btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 20px rgba(16, 185, 129, 0.4);
+}
+
+/* Mobile Responsive */
+@media (max-width: 991px) {
+    .navbar-soft {
+        padding: 0.5rem 0;
+    }
+    
+    .brand-text {
+        font-size: 1.2rem;
+    }
+    
+    .navbar-collapse {
+        background: rgba(255, 255, 255, 0.95);
+        backdrop-filter: blur(10px);
+        border-radius: 15px;
+        margin-top: 1rem;
+        padding: 1rem;
+        box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+    }
+    
+    .navbar-nav .nav-link {
+        margin: 0.2rem 0;
+        justify-content: flex-start;
+    }
+    
+    .search-form {
+        margin-left: 0;
+        margin-top: 1rem;
+        justify-content: center;
+    }
+    
+    .search-input {
+        width: 100%;
+    }
+    
+    .search-input:focus {
+        width: 100%;
+    }
+}
+
+/* Animation Classes */
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.navbar-soft {
+    animation: fadeInDown 0.6s ease-out;
+}
+
+/* Smooth Scrolling Effect */
+.navbar-soft.sticky-top {
+    position: sticky;
+    top: 0;
+    z-index: 1030;
+}
+
+/* Hover Effects for Better UX */
+.navbar-nav .nav-item {
+    position: relative;
+}
+
+.navbar-nav .nav-item::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background: linear-gradient(135deg, #d57a20, #d9963e);
+    transition: all 0.3s ease;
+    transform: translateX(-50%);
+}
+
+.navbar-nav .nav-item:hover::after {
+    width: 80%;
+}
+
+.navbar-nav .nav-item.active::after {
+    width: 80%;
+}
+
+/* Loading Animation for Search */
+.search-btn.loading {
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}

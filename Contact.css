@@ -1,0 +1,169 @@
+/* Variables couleurs */
+:root {
+    --primary-green: #059669;
+    --light-green: #10b981;
+    --accent-yellow: #f59e0b;
+    --white: #fff;
+    --light-bg: #f8fafc;
+    --shadow-light: 0 4px 12px rgba(5,150,105,0.08);
+    --border-radius: 18px;
+}
+
+/* Section contact image et titre */
+.cont {
+    background: var(--light-bg);
+    text-align: center;
+    padding: 40px 10px 30px 10px;
+    border-radius: 0 0 var(--border-radius) var(--border-radius);
+    box-shadow: var(--shadow-light);
+    margin-bottom: 30px;
+}
+.cont img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0 4px 16px rgba(5,150,105,0.10);
+    margin-bottom: 18px;
+}
+.cont h1 {
+    color: var(--primary-green);
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+.cont p {
+    color: #444;
+    font-size: 1.1rem;
+    margin-bottom: 0;
+}
+
+/* Formulaire de contact */
+.formulaire {
+    max-width: 480px;
+    margin: 0 auto 40px auto;
+    background: var(--white);
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow-light);
+    padding: 32px 28px 24px 28px;
+}
+.formulaire form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.formulaire label {
+    font-weight: 600;
+    color: var(--primary-green);
+    margin-bottom: 4px;
+    text-align: left;
+}
+.formulaire input,
+.formulaire textarea {
+    border: 1.5px solid var(--light-green);
+    border-radius: 8px;
+    padding: 10px 12px;
+    font-size: 1rem;
+    background: var(--light-bg);
+    transition: border-color 0.2s;
+}
+.formulaire input:focus,
+.formulaire textarea:focus {
+    border-color: var(--primary-green);
+    outline: none;
+}
+.formulaire button[type="submit"] {
+    background: linear-gradient(90deg, var(--primary-green), var(--light-green));
+    color: var(--white);
+    border: none;
+    border-radius: 25px;
+    padding: 12px 0;
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-top: 8px;
+    box-shadow: 0 2px 8px rgba(5,150,105,0.10);
+    transition: background 0.2s, transform 0.2s;
+}
+.formulaire button[type="submit"]:hover {
+    background: var(--accent-yellow);
+    color: var(--white);
+    transform: translateY(-2px) scale(1.03);
+}
+
+/* Footer */
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background: var(--light-bg);
+    padding: 40px 20px 20px 20px;
+    border-radius: var(--border-radius) var(--border-radius) 0 0;
+    box-shadow: var(--shadow-light);
+    margin-top: 40px;
+}
+.footer-section {
+    flex: 1 1 220px;
+    margin: 0 18px 24px 0;
+}
+.footer-section h3 {
+    color: var(--primary-green);
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.footer-section ul li {
+    margin-bottom: 8px;
+}
+.footer-section ul li a {
+    color: #1f2937;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+.footer-section ul li a:hover {
+    color: var(--primary-green);
+    text-decoration: underline;
+}
+.social-icons img {
+    width: 32px;
+    height: 32px;
+    margin-right: 8px;
+    border-radius: 50%;
+    box-shadow: 0 2px 8px rgba(16,185,129,0.08);
+    transition: transform 0.2s;
+}
+.social-icons img:hover {
+    transform: scale(1.1);
+}
+.footer-bottom {
+    background: var(--primary-green);
+    color: var(--white);
+    text-align: center;
+    padding: 12px 0;
+    border-radius: 0 0 var(--border-radius) var(--border-radius);
+    margin-top: 0;
+    font-size: 1rem;
+}
+
+/* Responsive */
+@media (max-width: 991px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 30px 10px 10px 10px;
+    }
+    .footer-section {
+        margin-right: 0;
+        margin-bottom: 18px;
+    }
+}
+@media (max-width: 767px) {
+    .cont img { width: 80px; height: 80px; }
+    .cont h1 { font-size: 1.3rem; }
+    .formulaire { padding: 18px 8px; }
+    .footer-container { padding: 18px 5px 5px 5px; }
+}

@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accueil - Chez Didi Traiteur</title>
+    <link rel="stylesheet" href="header-styles.css">
+    <link rel="stylesheet" href="menu.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-soft sticky-top">
+        <div class="container">
+            <div class="navbar-brand-container">
+                <img src="/images/conception-logo-ac-design-plat_23-2149482027.avif" alt="Logo" class="navbar-logo">
+                <span class="brand-text">Chez Didi Traiteur</span>
+            </div>
+            
+            <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="toggler-line"></span>
+                <span class="toggler-line"></span>
+                <span class="toggler-line"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">
+                            <i class="fas fa-home nav-icon"></i>
+                            Accueil
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="menu.html">
+                            <i class="fas fa-utensils nav-icon"></i>
+                            Notre Menu
+                        </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fas fa-info-circle nav-icon"></i>
+                            À propos
+                        </a>
+                        <ul class="dropdown-menu custom-dropdown">
+                            <li><a class="dropdown-item" href="A propos.html">
+                                <i class="fas fa-users me-2"></i>
+                                Qui sommes-nous ?
+                            </a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Galerie.html">
+                            <i class="fas fa-images nav-icon"></i>
+                            Galerie
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Contact.html">
+                            <i class="fas fa-envelope nav-icon"></i>
+                            Contact
+                        </a>
+                    </li>
+                </ul>
+                
+                <form class="search-form d-flex" role="search">
+                    <div class="search-container">
+                        <input class="form-control search-input" type="search" placeholder="Rechercher..." aria-label="Search"/>
+                        <button class="btn search-btn" type="submit">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="menu-hero">
+        <div class="hero-overlay">
+            <div class="container text-center text-white">
+                <h1 class="display-4 fw-bold mb-4">Notre Menu Authentique</h1>
+                <p class="lead">Découvrez les saveurs authentiques du Sénégal dans chaque plat</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Categories -->
+    <section class="py-5">
+        <div class="container">
+            <!-- Category Filter -->
+            <div class="row mb-5">
+                <div class="col-12 text-center">
+                    <h2 class="mb-4">Nos Spécialités</h2>
+                    <div class="menu-filter">
+                        <button class="btn btn-outline-primary active me-2 mb-2" data-filter="all">Tout</button>
+                        <button class="btn btn-outline-primary me-2 mb-2" data-filter="plats-principaux">Plats Principaux</button>
+                        <button class="btn btn-outline-primary me-2 mb-2" data-filter="entrees">Entrées</button>
+                        <button class="btn btn-outline-primary me-2 mb-2" data-filter="boissons">Boissons</button>
+                        <button class="btn btn-outline-primary me-2 mb-2" data-filter="desserts">Desserts</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Plats Principaux -->
+            <div class="menu-category mb-5" data-category="plats-principaux">
+                <h3 class="category-title mb-4">
+                    <i class="fas fa-utensils text-primary me-2"></i>
+                    Plats Principaux
+                </h3>
+                <div class="row">
+                    <div class="col-lg-6 mb-4">
+                        <div class="menu-item">
+                            <div class="row g-0">
+                                <div class="col-4">
+                                    <img src="https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?auto=compress&cs=tinysrgb&w=300" alt="Thieboudienne" class="menu-img">
+                                </div>
+                                <div class="col-8">
+                                    <div class="menu-content">
+                                        <div class="d-flex justify-content-between align-items-start">
+                                            <h5 class="menu-title">Thieboudienne</h5>
+                                            <span class="menu-price">4500 FCFA</span>
+                                        </div>
+                                        <p class="menu-description">Le plat national sénégalais : riz au poisson avec légumes frais et sauce tomate épicée</p>
+                                        <div class="menu-badges">
+                                            <span class="badge bg-success">Spécialité</span>
+                                            <span class="badge bg-info">Populaire</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 mb-4">
+                        <div class="menu-item">
+                            <div class="row g-0">
+                                <div class="col-4">
+                                    <img src="https://images.pexels.com/photos/2474658/pexels-photo-2474658.jpeg?auto=compress&cs=tinysrgb&w=300" alt="Yassa Poulet" class="menu-img">
+                                </div>
+                                <div class="col-8">
+                                    <div class="menu-content">
+                                        <div class="d-flex justify-content-between align-items-start">
+                                            <h5 class="menu-title">Yassa Poulet</h5>
+                                            <span class="menu-price">3500 FCFA</span>
+                                        </div>
+                                        <p class="menu-description">Poulet mariné aux oignons, citron et moutarde, servi avec du riz blanc parfumé</p>
+                                        <div class="menu-badges">
+                                            <span class="badge bg-warning">Épicé</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 mb-4">
+                        <div class="menu-item">
+                            <div class="row g-0">
+                                <div class="col-4">
+                                    <img src="https://images.pexels.com/photos/5737241/pexels-photo-5737241.jpeg?auto=compress&cs=tinysrgb&w=300" alt="Mafé" class="menu-img">
+                                </div>
+                                <div class="col-8">
+                                    <div class="menu-content">
+                                        <div class="d-flex justify-content-between align-items-start">
+                                            <h5 class="menu-title">Mafé</h5>
+                                            <span class="menu-price">4000 FCFA</span>
+                                        </div>
+                                        <p class="menu-description">Ragoût de viande ou poisson dans une sauce onctueuse aux arachides et légumes</p>
+                                        <div class="menu-badges">
+                                            <span class="badge bg-success">Traditionnel</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 mb-4">
+                        <div class="menu-item">
+                            <div class="row g-0">
+                                <div class="col-4">
+                                    <img src="https://images.pexels.com/photos/1640772/pexels-photo-1640772.jpeg?auto=compress&cs=tinysrgb&w=300" alt="Domoda" class="menu-img">
+                                </div>
+                                <div class="col-8">
+                                    <div class="menu-content">
+                                        <div class="d-flex justify-content-between align-items-start">
+                                            <h5 class="menu-title">Domoda</h5>
+                                            <span class="menu-price">3800 FCFA</span>
+                                        </div>
+                                        <p class="menu-description">Plat gambien adopté au Sénégal, viande mijotée dans une sauce tomate aux arachides</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Entrées -->
+            <div class="menu-category mb-5" data-category="entrees">
+                <h3 class="category-title mb-4">
+                    <i class="fas fa-leaf text-success me-2"></i>
+                    Entrées & Accompagnements
+                </h3>
+                <div class="row">
+                    <div class="col-lg-6 mb-4">
+                        <div class="menu-item">
+                            <div class="row g-0">
+                                <div class="col-4">
+                                    <img src="https://images.pexels.com/photos/4518843/pexels-photo-4518843.jpeg?auto=compress&cs=tinysrgb&w=300" alt="Pastels" class="menu-img">
+                                </div>
+                                <div class="col-8">
+                                    <div class="menu-content">
+                                        <div class="d-flex justify-content-between align-items-start">
+                                            <h5 class="menu-title">Pastels (3 pièces)</h5>
+                                            <span class="menu-price">1500 FCFA</span>
+                                        </div>
+                                        <p class="menu-description">Beignets croustillants farcis au poisson, parfaits en entrée ou en-cas</p>
+                                        <div class="menu-badges">
+                                            <span class="badge bg-warning">Croustillant</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 mb-4">
+                        <div class="menu-item">
+                            <div class="row g-0">
+                                <div class="col-4">
+                                    <img src="https://images.pexels.com/photos/4518844/pexels-photo-4518844.jpeg?auto=compress&cs=tinysrgb&w=300" alt="Fataya" class="menu-img">
+                                </div>
+                                <div class="col-8">
+                                    <div class="menu-content">
+                                        <div class="d-flex justify-content-between align-items-start">
+                                            <h5 class="menu-title">Fataya (2 pièces)</h5>
+                                            <span class="menu-price">1200 FCFA</span>
+                                        </div>
+                                        <p class="menu-description">Chaussons feuilletés garnis de viande hachée épicée et d'œuf</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 mb-4">
+                        <div class="menu-item">
+                            <div class="row g-0">
+                                <div class="col-4">
+                                    <img src="https://images.pexels.com/photos/1640774/pexels-photo-1640774.jpeg?auto=compress&cs=tinysrgb&w=300" alt="Salade" class="menu-img">
+                                </div>
+                                <div class="col-8">
+                                    <div class="menu-content">
+                                        <div class="d-flex justify-content-between align-items-start">
+                                            <h5 class="menu-title">Salade Sénégalaise</h5>
+                                            <span class="menu-price">2000 FCFA</span>
+                                        </div>
+                                        <p class="menu-description">Mélange frais de légumes locaux avec vinaigrette à l'huile de palme</p>
+                                        <div class="menu-badges">
+                                            <span class="badge bg-success">Frais</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Boissons -->
+            <div class="menu-category mb-5" data-category="boissons">
+                <h3 class="category-title mb-4">
+                    <i class="fas fa-glass-water text-info me-2"></i>
+                    Boissons Traditionnelles
+                </h3>
+                <div class="row">
+                    <div class="col-lg-6 mb-4">
+                        <div class="menu-item">
+                            <div class="row g-0">
+                                <div class="col-4">
+                                    <img src="https://images.pexels.com/photos/1640775/pexels-photo-1640775.jpeg?auto=compress&cs=tinysrgb&w=300" alt="Bissap" class="menu-img">
+                                </div>
+                                <div class="col-8">
+                                    <div class="menu-content">
+                                        <div class="d-flex justify-content-between align-items-start">
+                                            <h5 class="menu-title">Bissap</h5>
+                                            <span class="menu-price">800 FCFA</span>
+                                        </div>
+                                        <p class="menu-description">Boisson rafraîchissante à base de fleurs d'hibiscus, menthe et gingembre</p>
+                                        <div class="menu-badges">
+                                            <span class="badge bg-info">Rafraîchissant</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 mb-4">
+                        <div class="menu-item">
+                            <div class="row g-0">
+                                <div class="col-4">
+                                    <img src="https://images.pexels.com/photos/1640776/pexels-photo-1640776.jpeg?auto=compress&cs=tinysrgb&w=300" alt="Gingembre" class="menu-img">
+                                </div>
+                                <div class="col-8">
+                                    <div class="menu-content">
+                                        <div class="d-flex justify-content-between align-items-start">
+                                            <h5 class="menu-title">Jus de Gingembre</h5>
+                                            <span class="menu-price">700 FCFA</span>
+                                        </div>
+                                        <p class="menu-description">Boisson épicée et revigorante au gingembre frais, ananas et citron</p>
+                                        <div class="menu-badges">
+                                            <span class="badge bg-warning">Épicé</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 mb-4">
+                        <div class="menu-item">
+                            <div class="row g-0">
+                                <div class="col-4">
+                                    <img src="/images/téléchargement (2).jpeg" alt="Attaya" class="menu-img">
+                                </div>
+                                <div class="col-8">
+                                    <div class="menu-content">
+                                        <div class="d-flex justify-content-between align-items-start">
+                                            <h5 class="menu-title">Attaya (Thé à la menthe)</h5>
+                                            <span class="menu-price">500 FCFA</span>
+                                        </div>
+                                        <p class="menu-description">Thé vert traditionnel préparé selon la cérémonie sénégalaise</p>
+                                        <div class="menu-badges">
+                                            <span class="badge bg-success">Traditionnel</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Desserts -->
+            <div class="menu-category mb-5" data-category="desserts">
+                <h3 class="category-title mb-4">
+                    <i class="fas fa-birthday-cake text-warning me-2"></i>
+                    Desserts
+                </h3>
+                <div class="row">
+                    <div class="col-lg-6 mb-4">
+                        <div class="menu-item">
+                            <div class="row g-0">
+                                <div class="col-4">
+                                    <img src="https://images.pexels.com/photos/1640779/pexels-photo-1640779.jpeg?auto=compress&cs=tinysrgb&w=300" alt="Thiakry" class="menu-img">
+                                </div>
+                                <div class="col-8">
+                                    <div class="menu-content">
+                                        <div class="d-flex justify-content-between align-items-start">
+                                            <h5 class="menu-title">Thiakry</h5>
+                                            <span class="menu-price">1500 FCFA</span>
+                                        </div>
+                                        <p class="menu-description">Dessert traditionnel au couscous, lait caillé, vanille et raisins secs</p>
+                                        <div class="menu-badges">
+                                            <span class="badge bg-success">Traditionnel</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 mb-4">
+                        <div class="menu-item">
+                            <div class="row g-0">
+                                <div class="col-4">
+                                    <img src="https://images.pexels.com/photos/1640780/pexels-photo-1640780.jpeg?auto=compress&cs=tinysrgb&w=300" alt="Degue" class="menu-img">
+                                </div>
+                                <div class="col-8">
+                                    <div class="menu-content">
+                                        <div class="d-flex justify-content-between align-items-start">
+                                            <h5 class="menu-title">Dégué</h5>
+                                            <span class="menu-price">1200 FCFA</span>
+                                        </div>
+                                        <p class="menu-description">Dessert crémeux au mil, lait concentré et arômes naturels</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="bg-primary text-white py-5">
+        <div class="container text-center">
+            <h3 class="mb-4">Prêt à commander ?</h3>
+            <p class="lead mb-4">Contactez-nous dès maintenant pour passer votre commande</p>
+            <div class="d-flex justify-content-center gap-3 flex-wrap">
+                <a href="tel:+221775256287" class="btn btn-light btn-lg">
+                    <i class="fas fa-phone me-2"></i>
+                    Appeler maintenant
+                </a>
+                <a href="Contact.html" class="btn btn-outline-light btn-lg">
+                    <i class="fas fa-envelope me-2"></i>
+                    Nous contacter
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section about-us-footer">
+                <h3>CHEZ DIDI TRAITEUR</h3>
+                <p>
+                    Votre escale culinaire à Dakar pour des saveurs sénégalaises authentiques. Venez découvrir la passion de notre terroir dans chaque plat.
+                </p>
+                <div class="social-icons">
+                    <a href="##" target="_blank" aria-label="Facebook"><img src="images/images.jpeg" alt="Facebook"></a>
+                    <a href="##" target="_blank" aria-label="Instagram"><img src="/images/téléchargement.png" alt="Instagram"></a>
+                </div>
+            </div>
+
+            <div class="footer-section quick-links">
+                <h3>Liens Rapides</h3>
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="menu.html">Notre Menu</a></li>
+                    <li><a href="A propos.html">Qui sommes-nous?</a></li>
+                    <li><a href="Galerie.html">Galerie</a></li>
+                    <li><a href="Contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section contact-info">
+                <h3>Nous Contacter</h3>
+                <p><i class="fas fa-map-marker-alt"></i> 123, xxxxxx, Dakar, Sénégal</p>
+                <p><i class="fas fa-phone"></i> +221 77-525-62-87</p>
+                <p><i class="fas fa-envelope"></i> contact@DIDITRAITEUR.sn</p>
+                <p><i class="fas fa-clock"></i> Lun - Sam : 12h-00H & 19h-23h</p>
+                <p>Dimanche : Fermé</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Ismaila diakhate. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="menu.js"></script>
+</body>
+</html>
